@@ -3,6 +3,7 @@ const navbarData = [
         item: '[apple-logo]',
         icon: '',
         subitems: [],
+        to: '',
 
     },
     {
@@ -53,7 +54,8 @@ const navbarData = [
                 subitem: 'Mojave',
                 isNew: false,
             },
-        ]
+        ],
+        to: 'mac',
     },
     {
         item: 'iPad',
@@ -96,6 +98,7 @@ const navbarData = [
                 isNew: false,
             },
         ],
+        to: 'ipad',
     },
     {
         item: 'iPhone',
@@ -138,6 +141,7 @@ const navbarData = [
                 isNew: false,
             },
         ],
+        to: 'iphone',
     },
     {
         item: 'Watch',
@@ -176,6 +180,7 @@ const navbarData = [
                 isNew: false,
             },
         ],
+        to: 'watch',
     },
     {
         item: 'TV',
@@ -206,6 +211,7 @@ const navbarData = [
                 isNew: false,
             },
         ],
+        to: 'tv',
     },
     {
         item: 'Music',
@@ -240,21 +246,25 @@ const navbarData = [
                 isNew: false,
             },
         ],
+        to: 'music',
     },
     {
         item: 'Support',
         icon: '',
         subitems: [],
+        to: 'support',
     },
     {
         item: '[search]',
         icon: '',
         subitems: [],
+        to: '',
     },
     {
         item: '[bag]',
         icon: '',
         subitems: [],
+        to: '',
     }
 ]
 

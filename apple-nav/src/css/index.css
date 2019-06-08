@@ -126,3 +126,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.nav {
+  position: fixed;
+  height: 44px;
+  width: 100%;
+  background-color: rgba(49, 49, 49);
+  color: rgba(255, 255, 255);
+  font-size: 1.4rem;
+}
+.nav .nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+.nav .nav-wrapper .nav-item {
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+}
