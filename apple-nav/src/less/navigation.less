@@ -2,7 +2,6 @@
 
 .nav {
     // display
-    position: fixed;
     height: 44px;
     width: 100%;
 
@@ -14,6 +13,31 @@
     font-size: 1.4rem;
 
     .nav-wrapper {
+        // display
+        .flex();
+        height: inherit;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 0 22px;
+
+        .nav-item {
+            // font
+            color: @nav-font-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.subnav {
+    //display
+    height: 92px;
+    width: 100%;
+    padding: 1.2rem 0;
+
+    // background
+    background-color: @subnav-bg-color;
+
+    .subnav-wrapper {
         // display
         .flex();
         height: inherit;

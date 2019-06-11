@@ -137,10 +137,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .nav {
-  position: fixed;
   height: 44px;
   width: 100%;
-  background-color: rgba(49, 49, 49);
+  background-color: rgba(45, 45, 45, 0.98);
   color: rgba(255, 255, 255);
   font-size: 1.4rem;
 }
@@ -156,6 +155,27 @@ body {
   padding: 0 22px;
 }
 .nav .nav-wrapper .nav-item {
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+}
+.subnav {
+  height: 92px;
+  width: 100%;
+  padding: 1.2rem 0;
+  background-color: rgba(242, 242, 242, 0.7);
+}
+.subnav .subnav-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+.subnav .subnav-wrapper .nav-item {
   color: rgba(255, 255, 255);
   text-decoration: none;
 }

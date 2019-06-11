@@ -24,8 +24,8 @@ export default class NavWrapper extends React.Component {
     render() {
         return(
             <div className='nav-wrapper'>
-                {this.state.navItems.map(navItem => (
-                    <NavItem navItem={navItem} />
+                {this.state.navItems.map((navItem, idx) => (
+                    <NavItem navItem={navItem} selectedNav={this.state.selectedNav} key={idx}/>
                 ))}
             </div>
         )

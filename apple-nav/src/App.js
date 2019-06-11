@@ -1,32 +1,40 @@
 import React from 'react';
 
 // import components
-import NavWrapper from './components/NavBar/NavWrapper';
-import DummyPage from './components/DummyPage';
+import HomePage from './components/HomePage';
 
 // import dependencies
 import { Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className='App'>
-      <div className='nav'>
-        <NavWrapper />
+class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state={
+      selectedNav: '',
+    }
+  }
+
+  handleSelectNav = e => 
+  {
+    console.log(e);
+    this.setState({
+      selectedNav: 'mac',
+    })
+  }
+
+  render() {
+    return (
+      <div className='App'>
+        <Route path='/' exact render={(props) => (
+          <HomePage {...props} handleSelectNav={this.handleSelectNav} />
+        )} />
+        <Route path='/:id' render={(props) => (
+          <HomePage {...props} handleSelectNav={this.handleSelectNav} />
+        )} />
       </div>
-      
-      <header className='App-header'>
-        Header
-      </header>
-      <Route path='/' component={DummyPage} exact/>
-      <Route path='/mac' component={DummyPage} />
-      <Route path='/ipad' component={DummyPage} />
-      <Route path='/iphone' component={DummyPage} />
-      <Route path='/watch' component={DummyPage} />
-      <Route path='/tv' component={DummyPage} />
-      <Route path='/music' component={DummyPage} />
-      <Route path='/support' component={DummyPage} />
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
